@@ -17,9 +17,7 @@
     "url": "https://github.com/dannypaz/trufflecake/issues"
   },
   "homepage": "https://github.com/dannypaz/trufflecake",
-  "dependencies": {
-    "angular": "^1.4.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "del": "^2.0.1",
     "gulp": "^3.9.0",
