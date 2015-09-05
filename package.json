@@ -21,8 +21,10 @@
     "angular": "^1.4.3"
   },
   "devDependencies": {
-    "babel-eslint": "^4.0.5",
     "gulp": "^3.9.0",
-    "gulp-jslint": "^0.2.2"
+    "gulp-jshint": "^1.11.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.0"
   }
 }

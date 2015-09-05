@@ -1,5 +1,8 @@
 var gulp = require('gulp')
-  , jslint = require('gulp-jslint');
+  , jshint = require('gulp-jshint')
+  , uglify = require('gulp-uglify')
+  , notify = require('gulp-notify')
+  , rename = require('gulp-rename');
 
 var files {
   js: [
@@ -8,11 +11,16 @@ var files {
   ]
 };
 
+gulp.task('minified')
+
 gulp.task('default', function(){
   return gulp.src(files.js)
     // You can add options to jslint with {}
-    .pipe(jslint())
-    .on('error', function(err){
-      throw err;
-    });
+    .pipe(jshint())
+    .pipe(gulp.dest('dist/'))
+    .pipe()
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/'))
+    .pipe(notify({message: 'build complete'}));
 });
