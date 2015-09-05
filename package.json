@@ -4,7 +4,8 @@
   "description": "Date selection directive for AngularJS",
   "main": "index.js",
   "scripts": {
-    "start": "httpster"
+    "start": "httpster",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "homepage": "https://github.com/dannypaz/trufflecake",
   "dependencies": {
     "angular": "^1.4.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "gulp": "^3.9.0",
+    "gulp-jslint": "^0.2.2"
   }
 }
